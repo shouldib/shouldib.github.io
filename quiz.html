@@ -1,0 +1,112 @@
+<html>
+<!--quizContainer:
+     width: 37rem;
+    text-align: center;
+    margin: auto;
+    box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.21), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+    background-color: #b8e3ff00;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}   
+-->
+<head>
+    <meta charset="utf-8">
+    <title>Should IB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="stylesheet1.css">
+    <!-- <link rel="stylesheet" href="stylesheet1.css"> -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/front-page.css">
+    <link rel="stylesheet" href="stylesheets/quiz.css">
+    <link rel="stylesheet" href="stylesheets/index.css">
+
+</head>
+
+<body style="padding-top: 80px;">
+    <div class="container-fluid main align-middle" style="width:90%; text-align:center;
+    margin:auto;">
+        <!--This quiz id based on html and java script so anyone can find the answers to these quesion easliy by looking around
+      the code but this is not the point anyways. This quiz should be a way for the students to learn if IB is right
+      for them or not
+      -->
+        <div class="quizContainer">
+            <h2 class="quizHeader">Take the Renowned Should IB Quiz!</h2>
+            <div class="quizQuestions">
+                <div class="form-radio form-radio-block">
+                    <div class="form-radio-legend question">Can you study for extended periods of time?</div>
+                    <label for="opt1" class="radio correct">
+                        <input type="radio" name="q1" id="opt1" class="hidden" value="10" />
+                        <span class="label"></span>Yes
+                    </label>
+                    <label for="opt2" class="radio">
+                        <input type="radio" name="q1" id="opt2" class="hidden" value="0" />
+                        <span class="label"></span>No
+                    </label>
+                </div>
+                <div class="form-radio form-radio-block">
+                    <div class="form-radio-legend question">Can you work under stress?</div>
+                    <label for="opt3" class="radio correct">
+                        <input type="radio" name="q2" id="opt3" class="hidden" value="20" />
+                        <span class="label"></span>Yes
+                    </label>
+                    <label for="opt4" class="radio">
+                        <input type="radio" name="q2" id="opt4" class="hidden" value="10" />
+                        <span class="label"></span>Maybe
+                    </label>
+                    <label for="opt5" class="radio">
+                        <input type="radio" name="q2" id="opt5" class="hidden" value="0" />
+                        <span class="label"></span>No
+                    </label>
+                </div>
+                <div class="form-radio form-radio-block">
+                    <div class="form-radio-legend question">Can you write well in English?</div>
+                    <label for="opt6" class="radio correct">
+                        <input type="radio" name="q3" id="opt6" class="hidden" value="20" />
+                        <span class="label"></span>Yes
+                    </label>
+                    <label for="opt7" class="radio">
+                        <input type="radio" name="q3" id="opt7" class="hidden" value="10" />
+                        <span class="label"></span>Maybe
+                    </label>
+                    <label for="opt8" class="radio">
+                        <input type="radio" name="q3" id="opt8" class="hidden" value="0" />
+                        <span class="label"></span>No
+                    </label>
+                </div>
+                <div class="form-radio form-radio-block">
+                    <div class="form-radio-legend question">Are you an extreme procrastinator?</div>
+                    <label for="opt9" class="radio correct">
+                        <input type="radio" name="q4" id="opt9" class="hidden" value="0" />
+                        <span class="label"></span>Yes
+                    </label>
+                    <label for="opt10" class="radio">
+                        <input type="radio" name="q4" id="opt10" class="hidden" value="10" />
+                        <span class="label"></span>Maybe
+                    </label>
+                    <label for="opt11" class="radio">
+                        <input type="radio" name="q4" id="opt11" class="hidden" value="20" />
+                        <span class="label"></span>No
+                    </label>
+                </div>
+            </div>
+            <div class="submitter">
+                <input class="quizSubmit btn btn-primary" id="submitButton" onClick="submitQuiz()" type="submit" value="Submit" />
+            </div>
+
+            <div class="container">
+                <div class="quizScore">
+                    <h2 id="userScore"></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="rounded mx-auto d-block wrapper">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Lol_question_mark.png" id="ib-image"
+                        class="rounded ib-image" alt="ib-image" width="150" height="150">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="scripts/ibquiz.1.js">
+    </script>
+</body>

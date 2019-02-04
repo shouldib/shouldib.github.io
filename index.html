@@ -1,0 +1,152 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Should IB</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="stylesheet1.css">
+  <!-- <link rel="stylesheet" href="stylesheet1.css"> -->
+  <link rel="stylesheet" type="text/css" href="stylesheets/front-page.css">
+  <link rel="stylesheet" href="stylesheets/quiz.css">
+  <link rel="stylesheet" href="stylesheets/index.css">
+
+</head>
+
+<body style="padding-top: 80px;">
+
+  <!-- Navigation Bar -->
+
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #4c9ace;">
+      <a class="navbar-brand" href="#">Should IB</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/ibTest.html">TheIBTest</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">GradeCalculator</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Dropdown link</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="/action">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!--End of Navigation Bar-->
+
+  <!--Main Content -->
+  <div class="container-fluid">
+    <div class="main align-middle" style="width:90%; text-align:center;
+        margin:auto;">
+      <div class="row justify-content-center">
+        <div class="embed-responsive embed-responsive-16by9 col-md-6
+            text-center">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <!--This quiz id based on html and java script so anyone can find the answers to these quesion easily by looking around
+      the code but this is not the point anyways. This quiz should be a way for the students to learn if IB is right
+      for them or not.-->
+
+      <div class="quizContainer">
+        <h2 class="quizHeader">Take the Renowned Should IB Quiz!</h2>
+        <div class="quizQuestions">
+          <div class="form-radio form-radio-block">
+            <div class="form-radio-legend question">Can you study for extended periods of time?</div>
+            <label for="opt1" class="radio correct">
+              <input type="radio" name="q1" id="opt1" class="hidden" value="10" />
+              <span class="label"></span>Yes
+            </label>
+            <label for="opt2" class="radio">
+              <input type="radio" name="q1" id="opt2" class="hidden" value="0" />
+              <span class="label"></span>No
+            </label>
+          </div>
+          <div class="form-radio form-radio-block">
+            <div class="form-radio-legend question">Can you study for extended periods of time?</div>
+            <label for="opt3" class="radio correct">
+              <input type="radio" name="q2" id="opt3" class="hidden" value="20" />
+              <span class="label"></span>Yes
+            </label>
+            <label for="opt4" class="radio">
+              <input type="radio" name="q2" id="opt4" class="hidden" value="10" />
+              <span class="label"></span>Maybe
+            </label>
+            <label for="opt5" class="radio">
+              <input type="radio" name="q2" id="opt5" class="hidden" value="0" />
+              <span class="label"></span>No
+            </label>
+          </div>
+          <div class="form-radio form-radio-block">
+            <div class="form-radio-legend question">Can you study for extended periods of time?</div>
+            <label for="opt6" class="radio correct">
+              <input type="radio" name="q3" id="opt6" class="hidden" value="20" />
+              <span class="label"></span>Yes
+            </label>
+            <label for="opt7" class="radio">
+              <input type="radio" name="q3" id="opt7" class="hidden" value="10" />
+              <span class="label"></span>Maybe
+            </label>
+            <label for="opt8" class="radio">
+              <input type="radio" name="q3" id="opt8" class="hidden" value="0 " />
+              <span class="label"></span>No
+            </label>
+          </div>
+        </div>
+        <div class="submitter">
+          <input class="quizSubmit" id="submitButton" onClick="submitQuiz()" type="submit" value="Submit" />
+        </div>
+
+        <div class="container">
+          <div class="quizScore">
+            <h2 id="userScore"></h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="rounded mx-auto d-block wrapper">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Lol_question_mark.png" id="ib-image" class="rounded ib-image"
+              alt="ib-image" width="150" height="150">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <!--Scripts-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="scripts/ibquiz.js"></script>
+  <script src="scripts/questions.js"></script>
+
+
+
+</body>
+
+</html>
